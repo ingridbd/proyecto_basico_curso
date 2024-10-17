@@ -6,56 +6,91 @@
     <title>Document</title>
  
     main div {whith:30%;
-    <style>
-
-        *{padding: 0;
-        margin:0;}
-
-    header,nav,main,footer {width:80%;
-    margin: 0 auto;}
-
-        header {width: 80%;
-                min-height: 8rem;
-                background-color: pink;}
-
-        nav{    width: 80%;
-                min-height: 4rem;
-                background-color: orange;}
-
-        main {  width: 80%;
-                min-height: 20rem;
-                background-color: lightblue;
-                display:flex; 
-                justify-content: space-around;
-                flex-wrap: wrap;
+        <style>
+            /* RESET */
+            * {
+              padding: 0;
+              margin: 0;
+            
             }
-
-        footer {width: 80%;
-                min-height: 7rem;
-                background-color: chartreuse;}
-        
-
-    </style>
+            a{
+              text-decoration: none
+              color(black);
+            }
+      
+            /* CODIGO PAGINA */
+      
+            header,
+            nav,
+            main,
+            footer {
+              width: 80%;
+              margin: 0 auto;
+            }
+            header {
+              min-height: 8rem;
+              background-color: pink;
+            }
+            nav {
+              min-height: 4rem;
+              background-color: orange;
+            }
+            main {
+              min-height: 20rem;
+              background-color: lightblue;
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+            }
+            footer {
+              min-height: 7rem;
+              background-color: chartreuse;
+            }
+            .ponerBorde {
+              border: 0.3rem solid black;
+            }
+            main div {
+              width: 30%;
+              min-height: 5rem;
+              background-color: rgb(211, 211, 211);
+              border: 0.02rem solid red;
+            }
+            .izquierda {
+              background-color: rgba(203, 233, 69, 0.651);
+            }
+            .derecha {
+              background-color: rgba(61, 226, 61, 0.486);
+            }
+          </style>
 </head>
 <body>
+    <header></header>
 
-    <header>
+    <nav class="ponerBorder"></nav>
 
-    </header>
-
-    <nav class="poner borde">
-
-    </nav>
-
-    <main>
-        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse, velit saepe sed error soluta rerum facere eum aut vitae vel sapiente sequi animi totam nisi voluptas voluptates maiores ab.</div>
-        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quaerat dolorem obcaecati velit ipsa perspiciatis! Asperiores debitis sit iusto, tempora aliquam dolores vitae suscipit eaque impedit voluptatibus! Quia, ut beatae.</div>
-        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse, velit saepe sed error soluta rerum facere eum aut vitae vel sapiente sequi animi totam nisi voluptas voluptates maiores ab.</div>
-        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quaerat dolorem obcaecati velit ipsa perspiciatis! Asperiores debitis si
+    <main id="principal">
+      <div class="izquierda">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        beatae dicta dolorum vero, quae placeat soluta earum recusandae
+        similique quibusdam.
+      </div>
+      <div class="derecha">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident
+        ut sint quaerat beatae quisquam ullam aspernatur consequuntur vitae
+        quae.
+      </div>
+      <div class="centro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident
+        ut sint quaerat beatae quisquam ullam aspernatur consequuntur vitae
+        quae.
+      </div>
+      <div class="2izquierda">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident
+        ut sint quaerat beatae quisquam ullam aspernatur consequuntur vitae
+        quae.
+      </div>
     </main>
 
-    <footer class="poner borde">
-
-    </footer>
-</body>
+    <footer class="ponerBorder"></footer>
+  </body>
 </html>
